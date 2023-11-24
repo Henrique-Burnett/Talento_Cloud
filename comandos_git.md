@@ -13,3 +13,5 @@ checagem -> git status
 Criar nova branch -> git branch <nome da nova branch>
 
 Para trocar de branch -> git checkout <nome da branch desejada>
+
+git branch --list -> lista todas as branches

@@ -14,4 +14,8 @@ Criar nova branch -> git branch <nome da nova branch>
 
 Para trocar de branch -> git checkout <nome da branch desejada>
 
-git branch --list -> lista todas as branches
+Lista todas as branches -> git branch --list 
+
+Faz a junção das duas branches -> git merge <nome da branch a ser incorporada na master/main>
+
+Deleta uma branch específica -> git -d <nome da branch>

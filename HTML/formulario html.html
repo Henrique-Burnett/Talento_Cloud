@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body> 
+    <!-- TIP: para selecionar palavras iguais e renomeá-las de uma só vez, utilize o atalho Ctrl + D -->
+    <h1>Formulário de cadastro</h1>
+    <form action="">
+        <label for="nome">Nome: </label>
+        <input type="text" id="nome">
+        <label for="email">E-mail: </label>
+        <input type="email" name="email" id="email"> <br>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" placeholder="mín. de 6 caracteres">
+        <label for="celular">Telefone: </label>
+        <input type="tel" id="celular" name="celular">
+        <section>
+            <p>Nacionalidade: </p>
+            <input type="radio" name="nacionalidade" id="brasileira" value="brasileira">
+            <label for="brasileira">Brasileira</label>
+            <input type="radio" name="nacionalidade" id="estrangeira" value="estrangeira">
+            <label for="estrangeira">Outra</label>
+        </section>
+        <section>
+           <p>Qual o seu meio de transporte para vir ao trabalho?</p>
+           <input type="checkbox" name="transporte" id="onibus" value="onibus">
+           <label for="onibus">Ônibus</label>
+           <input type="checkbox" name="transporte" id="trem" value="trem">
+           <label for="trem">Trem / Metrô</label>
+           <input type="checkbox" name="transporte" id="veiculo" value="veiculo">
+           <label for="veiculo">Veículo próprio (carro ou moto)</label>
+           <input type="checkbox" name="transporte" id="app" value="app">
+           <label for="app">Corridas de aplicativo (Uber, 99, Táxi, etc.)</label> 
+        </section> <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>

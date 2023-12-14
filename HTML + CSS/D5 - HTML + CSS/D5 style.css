@@ -1,0 +1,37 @@
+header {
+  font-family: Montserrat, sans-serif;
+}
+
+header, footer {
+  background: #331E36;
+  color: white;
+  padding: 20px;
+}
+
+#logo-header {
+  font-size: 32px;
+}
+
+a {
+  text-decoration: none;
+  color: #6EA4BF;
+}
+
+main {
+  background-color: #ECFEE8;
+  padding: 16px;
+  color: #6EA4BF;
+  font-family: Montserrat, sans-serif;
+}
+
+ol li {font-weight: 900;}
+img {
+  margin: 32px;
+  width: 600px;
+  height: 300px;
+}
+
+ul.social {
+  font-family: 'Segoe UI', Verdana, sans-serif;
+  margin: 8px;
+}

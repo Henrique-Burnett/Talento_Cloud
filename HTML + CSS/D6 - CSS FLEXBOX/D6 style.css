@@ -25,7 +25,10 @@ main {
 }
 
 ol li {font-weight: 900;}
+
 img {
+  display: flex;
+  justify-content: flex-start;
   margin: 32px;
   width: 600px;
   height: 300px;

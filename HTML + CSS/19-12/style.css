@@ -9,6 +9,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  margin-bottom: 16px;
   }
 
 ul {
@@ -21,11 +22,6 @@ nav ul li {
   padding-left: 16px;
   list-style-type: none;
 }
-
-nav {
-  background-color: #EF7D19;
-}
-
 
 
 body{
@@ -42,7 +38,7 @@ section{
 }
 
 section div {
-  background: url(img/bg_laranja.jpg);
+  background: url(img/bg_laranja.jpg) no-repeat;
   border-radius: 10px;
 }
 
@@ -52,8 +48,10 @@ h1,h2 {margin:30px}
 
 h1,h2,h3,p{
   color: white;
+  justify-content: center;
 } 
 h3{
   padding-bottom: 30px;
   font-size: 24px;
+  font-weight: 900;
 }

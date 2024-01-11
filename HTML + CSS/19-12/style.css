@@ -23,7 +23,13 @@ nav ul li {
   list-style-type: none;
 }
 
-
+main {
+color: white;
+padding-top: 15px;
+padding-left: 12px;
+width: 800px;
+margin: 0 auto;
+}
 body{
   background-color: #59378d;
 }
@@ -40,18 +46,19 @@ section{
 section div {
   background: url(img/bg_laranja.jpg) no-repeat;
   border-radius: 10px;
+  height: 200px;
+  width: 450px;
 }
 
-/* h1,h2{text-align: center;} */
+h1{ font-size: 3rem;}
 
-h1,h2 {margin:30px}
+h2{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
 
-h1,h2,h3,p{
-  color: white;
-  justify-content: center;
-} 
 h3{
-  padding-bottom: 30px;
-  font-size: 24px;
+    margin-bottom: 30px;
+  font-size: 1.2rem;
   font-weight: 900;
-}
+} 

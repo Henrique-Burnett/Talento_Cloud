@@ -63,9 +63,13 @@ input.correct {
   display: none;
   font-size: .8rem;
   font-weight: 600;
-  color: #992020;
+  c
 }
 
 .visible {
   display: block;
+}
+
+.error-text-p {
+  color: red;
 }

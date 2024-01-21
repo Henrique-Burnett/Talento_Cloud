@@ -1,22 +1,30 @@
-//MANIPULANDO ELEMENTO SÓ POR DIVERSÃO
+//ESTILIZANDO COM JAVASCRIPT SÓ POR DIVERSÃO
 let titulo = document.querySelector("h2");
 titulo.style.color = "purple";
 titulo.style.fontSize = "2rem"
 titulo.style.backgroundColor = "#fff405"
 
+let botaoLogin = document.querySelector('button')
+botaoLogin.style.backgroundColor = 'purple';
+botaoLogin.style.color = 'white'
+
 // PRIMEIRA INTERAÇÃO DO USUÁRIO, digitando um nome de usuário inválido
-// let loginUsuario = document.getElementById("login-usuario");
-// let errorTextUsuario = document.querySelector(".error-text");
+let loginUsuario = document.querySelector("#login-usuario");
+loginUsuario.classList.add("error");
+loginUsuario.classList.remove("error");
 
-
-// loginUsuario.classList.add("error");
-// errorTextUsuario.classList.add('visible');
+let invalidUser = document.querySelector(".error-text");
+invalidUser.classList.add('visible');
+invalidUser.classList.remove('visible');
 
 // SEGUNDA INTERAÇÃO DO USUÁRIO, digitando um nome de usuário válido, mas uma senha incorreta
 
-let loginUsuario = document.getElementById("login-usuario");
-let acceptableTextUsuario = document.querySelector(".input.correct");
+let validUser = document.querySelector("#login-usuario");
+validUser.classList.add("correct");
 
+let invalidPassword = document.querySelector('#login-senha');
+invalidPassword.classList.add('error');
 
-loginUsuario.classList.add("input.correct");
-// errorTextUsuario.classList.add('visible');
+let wrongPassMessage = document.querySelector('label.error-text');
+
+wrongPassMessage.classList.add("visible");

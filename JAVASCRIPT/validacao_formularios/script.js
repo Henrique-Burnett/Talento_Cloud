@@ -1,7 +1,50 @@
-// ETAPA 01 - CAPTURANDO ELEMENTOS
+// ----- Funções gerais ---- //
+function togglePopup (input, label) {
+    //Mostrar popup de campo obrigatório
+    input.addEventListener("focus", () => 
+    {label.classList.add("required-popup");
+});
+
+    //Ocultar popup de campo obrigatório
+    input.addEventListener("blur", () => 
+    { label.classList.remove("required-popup");
+});
+}
+
+function estilizarInputPermitido(input, helper) {
+    helper.classList.remove("visible");
+    input.classList.remove("error");
+    input.classList.add("correct");
+}
+
+function estilizarInputProibido(input,helper) {
+    helper.classList.add("visible");
+    input.classList.add("error");
+    input.classList.remove("correct");
+}
+
+// ---- VALIDAÇÃO USERNAME (ETAPA 1: Capturando elementos) ----
 let usernameInput = document.getElementById("username");
 let usernameLabel = document.querySelector('label[for="username"]');
 let usernameHelper = document.getElementById("username-helper");
+
+togglePopup(usernameInput, usernameLabel)
+
+// Validar valor do input
+usernameInput.addEventListener('change', (e)=>(
+    let valor = e.target.value
+
+    if(valor.length < 3) {
+        //Adicionar estilos dinâmicos para sinalizar que algo está errado
+        usernameHelper.innerText = "Seu username precisa ter 3 ou mais caracteres";
+        estilizarInputProibido(usernameInput, usernameHelper) 
+    } else {
+        //Adicionar estilo dinâmico para sinalizar que está tudo certo
+        estilizarInputPermitido(input, helper)
+    }
+))
+
+// Validação de e-mail
 
 let emailInput = document.getElementById("email");
 let emailLabel = document.querySelector('label[for="email"]');
